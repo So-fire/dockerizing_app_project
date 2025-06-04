@@ -1,0 +1,15 @@
+
+services:
+  frontend:
+    build: ./application-code/web-tier
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+
+  backend:
+    build: ./application-code/app-tier
+    ports:
+      - "4000:4000"
+    env_file:
+      - ./application-code/app-tier/.env

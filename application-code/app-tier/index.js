@@ -1,3 +1,6 @@
+require('dotenv').config();  // <-- MUST be at the top!  sopia
+
+
 const transactionService = require('./TransactionService');
 const mysql = require('mysql');
 const express = require('express');
