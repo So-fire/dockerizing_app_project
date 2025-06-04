@@ -76,7 +76,7 @@
                 body: JSON.stringify({"amount":this.state.text_amt, "desc" :this.state.text_desc})
             }
             
-            fetch('http://localhost:4000/transaction', requestOptions)
+            fetch('http://13.218.201.210:4000/transaction', requestOptions)
             .then(response => response.json())
             .then(data => this.populateData())
             
